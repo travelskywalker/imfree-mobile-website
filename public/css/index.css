@@ -1,0 +1,286 @@
+@import "../fonts/stylesheet.css";
+
+html,
+body {
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Bariol';
+
+    background-color:#f5f6f6;
+
+}
+
+body {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+
+
+}
+.hide{
+    display:none !important;
+}
+
+
+.font-large{
+
+    font-size: 32px;
+}
+.logo-middle{
+    width: 100px;
+    top: 216px;
+    z-index:999;
+
+}
+.whole-cookie{
+    height: auto;
+    width: 210px;
+    margin: 0 auto;
+    display: inherit;
+    top: 150px;
+
+}
+.crumbs{
+    width:7%;
+    height:auto;
+    top: 214px;
+    left: 47%;
+    opacity:0;
+    transition: all 200ms ease-in;
+}
+.crumbs.move{
+    opacity:1;
+}
+.crumb1.move{
+    top: 208px;
+    left: 33%;
+}
+.crumb2.move{
+    top: 247px;
+    left: 61%;
+}
+.crumb3.move{
+    top: 124px;
+    left: 52%;
+}
+.crumb4.move{
+    top: 347px;
+    left: 44%;
+}
+.crumb5.move{
+    top: 369px;
+    left: 53%;
+}
+.crumb6.move{
+    top: 301px;
+    left: 38%;
+}
+.broken{
+    transition: all 1s;
+}
+.broken.move{
+    opacity:1;
+    z-index:9999;
+
+}
+
+.broken-cookie-left{
+    height: auto;
+    width: 168px;
+    margin: 0 auto;
+    top: 152px;
+    left: 42%;
+    transform: rotate(-11deg);
+    opacity: 0;
+    transition: all 200ms ease-in;
+
+}
+.broken-cookie-right{
+    height: auto;
+    width: 124px;
+    margin: 0 auto;
+    top: 160px;
+    left: 49%;
+    transform: rotate(11deg);
+    opacity: 0;
+    transition: all 200ms ease-in;
+
+}
+.broken-cookie-left.move{
+    left: 36%;
+    top: 126px;
+    transform: rotate(-1deg);
+}
+.broken-cookie-right.move{
+    top: 186px;
+    transform: rotate(6deg);
+    left: 52%;
+}
+.second-section{
+    min-height:200px;
+}
+.dark-black{
+    color:#323132;
+}
+.light-black{
+    color:#292929;
+}
+.white{
+    color:#fff;
+}
+.text-center{
+    text-align:center;
+}
+.parallax {
+    position: fixed;
+}
+.center{
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+h1.parallax{
+    width:100%;
+    text-align:center;
+
+}
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
+.content {
+    /*display: flex;*/
+    /*height: 100%;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+.top-content{
+    height:1500px;
+
+
+}
+
+#logo {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+#tagline {
+    width: 32rem;
+    margin-top: 2rem;
+}
+
+.progress-box {
+    display: flex;
+    /*align-items: stretch;*/
+    justify-content: space-between;
+}
+
+.progress-circle {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    border-radius: 50%;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.countdown {
+
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin: -15rem 0 0 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown h4 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.countdown p {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+#contacts {
+    margin-top: 0.5em;
+}
+
+#contacts p {
+
+    margin: 0 0 0.5em 0;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: lighter;
+    color: #999;
+}
+
+@media screen and (max-width: 960px) {
+
+    .progress-box {
+        transform: scale(0.75);
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .progress-box {
+        transform: scale(0.55);
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .progress-box {
+        transform: scale(0.4);
+    }
+
+    #logo {
+        /*margin-bottom: 0;*/
+    }
+
+    #tagline {
+        margin-top: 0;
+        width: 26rem;
+    }
+
+    .countdown p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .progress-box {
+        transform: scale(0.3);
+    }
+
+    .countdown p {
+        font-size: 1rem;
+    }
+}
