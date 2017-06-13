@@ -143,11 +143,11 @@
 						<img src="public/img/icon1.png"/>
 						<h3>41.40%</h3>
 						<p>Daily Active Users<br/>(DAU)</p>
-						<span>Above Industry <br/>Benchmark<i></i></span>
+						<span class="arrow-bottom">Above Industry <br/>Benchmark<i></i></span>
 				</div>
 				<div class="content-t">
 						<img src="public/img/icon2.png"/>
-						<h3>1.9X</h3>
+						<h3><span class="count">1.9</span>X</h3>
 						<p>Sessions in-app <br/>per Day</p>
 
 				</div>
@@ -158,7 +158,7 @@
 							Time In-App<br/>
 							Per Day
 						</p>
-						<span>Higher than top <br/>Android apps. <i></i></span>
+						<span class="arrow-bottom">Higher than top <br/>Android apps. <i></i></span>
 				</div>
 				<div class="content-t">
 						<img src="public/img/icon4.png"/>
@@ -383,6 +383,24 @@
 						$('#welcome-note .sub-label').addClass("active");
 
         }
+
+				if(data.curTop > 15150){
+						// $('.count').each(function () {
+						// 	$(this).prop('Counter',0).animate({
+						// 			Counter: $(this).text()
+						// 	}, {
+						// 			duration: 3000,
+						// 			easing: 'swing',
+						// 			step: function (now) {
+						// 					//$(this).text(Math.ceil(now));
+						// 				 // $(this).text(Math.ceil(now));
+						// 				 $(this).text(this.Counter.toFixed(2));
+						// 			 // $this.text(this.Counter.toFixed(now));
+						// 			}
+						// 	});
+						// });
+
+				}
 
 
     }

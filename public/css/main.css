@@ -427,15 +427,16 @@ width:8%;
 	max-height:1500px;
 }
 
-.content-t span{
+.content-t span.arrow-bottom{
 	margin-top: 20px;
 	display: inline-block;
 	font-size:0.8em;
 	position: relative;
-	    min-height: 50px;
+	min-height: 50px;
 }
 
-.content-t span:after, .content-t span:before {
+
+.content-t span.arrow-bottom:after, .content-t span.arrow-bottom:before {
 	bottom: 0;
 	left: 50%;
 	border: solid transparent;
@@ -445,13 +446,13 @@ width:8%;
 	position: absolute;
 	pointer-events: none;
 }
-.content-t span:after {
+.content-t span.arrow-bottom:after {
 	border-color: rgba(57, 105, 0, 0);
 	border-bottom-color: #396900;
 	border-width: 2px;
 	margin-left: -2px;
 }
-.content-t span:before {
+.content-t span.arrow-bottom:before {
 	border-color: rgba(57, 105, 0, 0);
 	border-bottom-color: #396900;
 	border-width: 8px;
