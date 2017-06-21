@@ -35,7 +35,8 @@ ol, ul {
 
 p {
 	margin:1em 0;
-	line-height:1.1em;
+	line-height:1.3em;
+
 }
 
 a {
@@ -49,7 +50,7 @@ q {
 }
 
 h1 {
-	font-size:2.91em;
+	font-size:2.61em;
 	margin:0;
   color:#323132;
   font-weight:100;
@@ -131,16 +132,19 @@ h4 {
 }
 
 #welcome-note .sub-label {
-	width:65%;
+	width:60%;
 	margin:4em auto;
 	display:table;
 
 }
+#welcome-note p{
+	font-size:1.3em;
+}
 #welcome-note .sub-label .sub-content{
-	width:33%;
+
 	display:table-cell;
 	padding: 0 10px;
-  font-size: .9em;
+  font-size: 1em;
 	opacity:0;
 }
 #welcome-note .sub-label.active .sub-content{
@@ -314,14 +318,14 @@ width:8%;
 	width:100%;
 	z-index:999;
 	background-color:#eeeff0;
-	padding:4em 0;
+	padding:3em 0;
 }
 
 .content-section .contents {
 
-	margin: 2em auto;
+	margin: 1em auto 0 auto;
 	display: table;
-	max-width: 900px;
+	max-width: 1000px;
 }
 .contents .cont{
 	display:table-cell;
@@ -446,7 +450,7 @@ width:8%;
 	position: absolute;
 	pointer-events: none;
 }
-.content-t span.arrow-bottom:after {
+.content-t span.arrow-bottom	:after {
 	border-color: rgba(57, 105, 0, 0);
 	border-bottom-color: #396900;
 	border-width: 2px;
@@ -518,4 +522,18 @@ width:8%;
 .footer-container ul li.colored{
 	margin:.9em 0;
 	font-size:1.3em;
+}
+
+
+.blackhole{
+	 -webkit-transition-property: left;
+	-webkit-transition: all 3s ease-in;
+  -moz-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
+	position:relative;
+}
+
+.blackhole.animate{
+	left:20%;
 }
