@@ -314,7 +314,7 @@ width:8%;
 }
 
 .content-section{
-	height:3200px;
+	min-height:3200px;
 	width:100%;
 	z-index:999;
 	background-color:#eeeff0;
@@ -326,6 +326,82 @@ width:8%;
 	margin: 1em auto 0 auto;
 	display: table;
 	max-width: 1000px;
+}
+.contents.with-blackhole{
+	width:100%;
+}
+.contents .animation-container{
+	position:relative;
+	width:100%;
+	display:block;
+	min-height:300px;
+
+}
+
+
+.contents .animation-container img{
+	position:absolute;
+	-webkit-transition-property: left;
+ -webkit-transition: all 3s ease-in;
+ -moz-transition: all 3s ease-in;
+ -o-transition: all 3s ease-in;
+ transition: all 3s ease-in;
+}
+.contents .animation-container img.pyramid{
+	width: 47%;
+	top: 36%;
+	left: 9%;
+	z-index:7777;
+	transform:scale(1,1);
+}
+.contents .animation-container img.cycle-text{
+	width: 86%;
+	top: 25%;
+	left: 52%;
+	z-index:8888;
+	transform:scale(0,0);
+	opacity:0;
+}
+/*animate part*/
+.contents .animation-container.animate img.pyramid{
+	/*left:70%;*/
+	-webkit-animation: pyramid 5s forwards; /* Safari 4.0 - 8.0 */
+	 animation: pyramid 5s forwards;
+
+}
+.contents .animation-container.animate img.cycle-text{
+	/*left:70%;*/
+	-webkit-animation: cycletext 10s forwards; /* Safari 4.0 - 8.0 */
+	 animation: cycletext 10s forwards;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pyramid {
+	0%   {left:9%;top:36%}
+ 	25%  {left:70%;}
+	60%  {left: 70%;top:25%;}
+	100% {left:70%;top:25%;transform:scale(0,0);}
+}
+
+@keyframes pyramid {
+	0%   {left:9%;top:36%}
+ 	25%  {left:70%;}
+	60%  {left: 70%;top:25%;}
+	100% {left:70%;top:25%;transform:scale(0,0);}
+}
+
+@-webkit-keyframes cycletext {
+	0%   {transform:scale(0,0);opacity:0;}
+	30%  {transform:scale(0,0);opacity:0;}
+ 	100% {transform:scale(1,1);opacity:1;}
+}
+
+@keyframes cycletext {
+	0%   {transform:scale(0,0);opacity:0;}
+	30%  {transform:scale(0,0);opacity:0;}
+	100% {transform:scale(1,1);opacity:1;}
 }
 .contents .cont{
 	display:table-cell;
@@ -522,18 +598,4 @@ width:8%;
 .footer-container ul li.colored{
 	margin:.9em 0;
 	font-size:1.3em;
-}
-
-
-.blackhole{
-	 -webkit-transition-property: left;
-	-webkit-transition: all 3s ease-in;
-  -moz-transition: all 3s ease-in;
-  -o-transition: all 3s ease-in;
-  transition: all 3s ease-in;
-	position:relative;
-}
-
-.blackhole.animate{
-	left:20%;
 }
