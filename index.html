@@ -80,13 +80,13 @@
 					<p>Every engagement rewards our members and unlocks brand knowledge, <br/>intimacy and value for marketers. Imfree member rewards can be redeemed <br/>as phone load to make the internet free, as well as offers which redeem at <br/>retail for the products and things they love. </p>
 				</div>
 				<div class="content-right cont-36 cont v-middle">
-					<img class="content-images" src="public/img/content/1.png">
+					<img class="content-images right-img img1" src="public/img/content/1.png">
 				</div>
 		</div>
 		<div class="contents">
 				<div class="content-left cont-36 cont v-middle">
 					<div id="img2-div">
-						<img class="content-images" src="public/img/content/2.png">
+						<img class="content-images left-img img2" src="public/img/content/2.png">
 						<p>T.E.H.P is a proprietary data management platform <br/>that provides near-real time, contextual and<br/> actionable data metrics. </p>
 					</div>
 				</div>
@@ -113,13 +113,13 @@
 					and a genuine understanding of their relationship.</p>
 				</div>
 				<div class="content-right cont-36 cont v-bottom">
-					<img class="content-images" src="public/img/content/3.png">
+					<img class="content-images right-img img3" src="public/img/content/3.png">
 				</div>
 		</div>
 		<div class="contents">
 				<div class="content-left cont-28 cont v-middle">
 					<div>
-						<img class="content-images" src="public/img/content/4.png">
+						<img class="content-images left-img img4" src="public/img/content/4.png">
 
 					</div>
 				</div>
@@ -182,7 +182,7 @@
 				<div class="content-left cont-28 cont v-middle">
 					<div>
 						<!-- <img class="content-images" src="public/img/img5.png"> -->
-						<img class="content-images" src="public/img/content/6.png">
+						<img class="content-images left-img img5" src="public/img/content/6.png">
 
 					</div>
 				</div>
@@ -201,7 +201,7 @@
 					<p>One outcome of powerful customer knowledge is the ability to <br/>innovate products or business. With Imfree you can segment, <br/>recruit and test traditional R&D programs with results available <br/>in less than 72 hours.  You can also re-test and iterate with <br/>intimate or mass bases of members with infinite split testing <br/>segmentation, in the same amount of time. The guys in the <br/>white coats thought this was really helpful.</p>
 				</div>
 				<div class="content-right cont-36 cont v-middle">
-					<img class="content-images" src="public/img/content/7.png">
+					<img class="content-images right-img img6" src="public/img/content/7.png">
 				</div>
 		</div>
 		<div class="contents with-blackhole">
@@ -423,6 +423,24 @@
 					});
 				}
 
+				if(data.curTop > 7120){
+					$('.content-images.img1').addClass('animate');
+				}
+				if(data.curTop > 10140){
+					$('.content-images.img2').addClass('animate');
+				}
+				if(data.curTop > 11200){
+					$('.content-images.img3').addClass('animate');
+				}
+				if(data.curTop > 12430){
+					$('.content-images.img4').addClass('animate');
+				}
+				if(data.curTop > 14680){
+					$('.content-images.img5').addClass('animate');
+				}
+				if(data.curTop > 15560){
+					$('.content-images.img6').addClass('animate');
+				}
 
     }
 	});
