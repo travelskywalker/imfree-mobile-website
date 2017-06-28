@@ -349,7 +349,7 @@
 				</div>
 
 		</div>
-		<p class="text-center white-color footer-text">© Copyright 2017 ImFree Mobile Inc., <a href="http://www.thehumanconnective.com" class="white-color" target="_blank">The Human Connective</a>, The Engmntprty</p>
+		<p class="text-center white-color footer-text">© Copyright 2017 ImFree Mobile Inc., <a class="yellow-color" href="http://www.thehumanconnective.com" class="white-color" target="_blank">The Human Connective</a>, The Engmntprty</p>
 	</div>
 </div>
 <!--
@@ -395,9 +395,11 @@
 
 
 				}
-				if(data.curTop > 17315){
-						$('.animation-container').addClass("animate");
+				if(data.curTop > 17400){
 
+						setTimeout(function(){
+							$('.animation-container').addClass("animate");
+						}, 2000);
 
 				}
 				if($('.count').hasClass('start-count') && (!$('.count').hasClass('end-count'))){
@@ -407,7 +409,7 @@
 								Counter: $(this).text()
 						}, {
 								start:0,
-								duration: 4000,
+								duration: 1000,
 								easing: 'swing',
 								step: function (now) {
 									if(x){

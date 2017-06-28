@@ -95,11 +95,12 @@ h4 {
 	color:#0078ff !important;
 }
 .yellow-color{
-	color:#d9ff00 !important;
+	color:#fad707 !important;
 }
 .orange-yellow-color{
 	color:#fbd906 !important;
 }
+
 .white-color{
 	color:#fff !important;
 }
@@ -338,10 +339,10 @@ width:8%;
 
 }
 .content-images{
- -webkit-transition: all 2s ease-in;
- -moz-transition: all 2s ease-in;
- -o-transition: all 2s ease-in;
- transition: all 2s ease-in;
+ -webkit-transition: all 1s ease-in;
+ -moz-transition: all 1s ease-in;
+ -o-transition: all 1s ease-in;
+ transition: all 1s ease-in;
 	position:relative;
 }
 .content-images.right-img{
@@ -364,10 +365,10 @@ width:8%;
 .contents .animation-container img{
 	position:absolute;
 	-webkit-transition-property: left;
- -webkit-transition: all 2s ease-in;
- -moz-transition: all 2s ease-in;
- -o-transition: all 2s ease-in;
- transition: all 2s ease-in;
+ -webkit-transition: all 1s ease-in;
+ -moz-transition: all 1s ease-in;
+ -o-transition: all 1s ease-in;
+ transition: all 1s ease-in;
 }
 .contents .animation-container img.pyramid{
 	width: 47%;
@@ -387,14 +388,14 @@ width:8%;
 /*animate part*/
 .contents .animation-container.animate img.pyramid{
 	/*left:70%;*/
-	-webkit-animation: pyramid 5s forwards; /* Safari 4.0 - 8.0 */
-	 animation: pyramid 5s forwards;
+	-webkit-animation: pyramid 2s forwards; /* Safari 4.0 - 8.0 */
+	 animation: pyramid 2s forwards;
 
 }
 .contents .animation-container.animate img.cycle-text{
 	/*left:70%;*/
-	-webkit-animation: cycletext 10s forwards; /* Safari 4.0 - 8.0 */
-	 animation: cycletext 10s forwards;
+	-webkit-animation: cycletext 5s forwards; /* Safari 4.0 - 8.0 */
+	 animation: cycletext 5s forwards;
 
 }
 
@@ -562,18 +563,16 @@ width:8%;
 }
 
 .footer-container{
-	max-height:550px;
-	height:550px;
-
-
-	background-color: #222222;
-}
-.footer-container{
 	position:relative;
-	height:100%;
+
 	display:block;
 	margin:5em 0 0 0;
 	padding:2em 0;
+
+	height:90vh;
+
+
+	background-color: #222222;
 }
 .footer-container .contents{
 	width:900px;
