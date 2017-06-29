@@ -569,11 +569,12 @@ width:8%;
 	margin:5em 0 0 0;
 	padding:2em 0;
 
-	height:617px;
+	height:454px;
 
 
 	background-color: #222222;
 }
+
 .footer-container .contents{
 	width:900px;
 	background-image: url(../img/footer-bg.png);
@@ -619,4 +620,10 @@ width:8%;
 .footer-container ul li.colored{
 	margin:.9em 0;
 	font-size:1.3em;
+}
+
+@media only screen and (min-height : 640px) {
+	.footer-container{
+		height:79vh;
+	}
 }
