@@ -609,7 +609,7 @@ width:8%;
 	padding:0;
 	position:absolute;
 	width:100%;
-	bottom:10px;
+	top:90%;
 
 }
 .footer-container ul{
@@ -628,6 +628,6 @@ width:8%;
 
 @media only screen and (min-height : 640px) {
 	.footer-container{
-		height:79vh;
+		height:100vh;
 	}
 }
