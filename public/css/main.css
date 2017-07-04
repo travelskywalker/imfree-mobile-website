@@ -35,7 +35,7 @@ ol, ul {
 
 p {
 	margin:1em 0;
-	line-height:1.3em;
+	line-height:1.5em;
 
 }
 
@@ -346,11 +346,11 @@ width:8%;
 	position:relative;
 }
 .content-images.right-img{
-	left:100%;
+	left:40%;
 	opacity:0;
 }
 .content-images.left-img{
-	right:100%;
+	right:40%;
 	opacity:0;
 }
 .content-images.right-img.animate{
@@ -609,7 +609,7 @@ width:8%;
 	padding:0 2em 0 0;
 }
 .footer-container .contents .cont img{
-	width:50%;
+	width:auto;
 }
 
 .footer-container .footer-text{
