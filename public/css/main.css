@@ -133,7 +133,7 @@ h4 {
 }
 
 #welcome-note .sub-label {
-	width:50%;
+	/*width:50%;*/
 	margin:4em auto;
 	display:table;
 
@@ -147,7 +147,8 @@ h4 {
 	padding: 0 10px;
   font-size: 1em;
 	opacity:0;
-	max-width:200px;
+	/*max-width:200px;*/
+	width:33%;
 }
 #welcome-note .sub-label.active .sub-content{
 	opacity:1;
@@ -471,6 +472,10 @@ width:8%;
 }
 .contents .cont img.small-img{
 	width:4%;
+}
+#welcome-note p img.small-img{
+	width:3%;
+	margin:0 2px;
 }
 
 .cont-41{
