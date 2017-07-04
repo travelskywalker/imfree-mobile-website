@@ -36,7 +36,7 @@ ol, ul {
 p {
 	margin:1em 0;
 	line-height:1.5em;
-
+	font-size:1em;
 }
 
 a {
@@ -133,7 +133,7 @@ h4 {
 }
 
 #welcome-note .sub-label {
-	width:60%;
+	width:50%;
 	margin:4em auto;
 	display:table;
 
@@ -147,6 +147,7 @@ h4 {
 	padding: 0 10px;
   font-size: 1em;
 	opacity:0;
+	max-width:200px;
 }
 #welcome-note .sub-label.active .sub-content{
 	opacity:1;
@@ -635,7 +636,11 @@ width:8%;
 .no-padding{
 	padding:0 !important;
 }
-
+.contents .cont img.egnmntprty,
+.egnmntprty{
+	width:15%;
+	margin-bottom:-4px;
+}
 @media only screen and (min-height : 640px) {
 	.footer-container{
 		height:100vh;
