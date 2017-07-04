@@ -370,16 +370,19 @@ width:8%;
  -o-transition: all 1s ease-in;
  transition: all 1s ease-in;
 }
+.contents .animation-container img.blackhole-img{
+	top:-14%;
+}
 .contents .animation-container img.pyramid{
 	width: 47%;
-	top: 36%;
+	top: 20%;
 	left: 9%;
 	z-index:7777;
 	transform:scale(1,1);
 }
 .contents .animation-container img.cycle-text{
 	width: 86%;
-	top: 25%;
+	top: 11%;
 	left: 52%;
 	z-index:8888;
 	transform:scale(0,0);
@@ -402,17 +405,17 @@ width:8%;
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pyramid {
-	0%   {left:9%;top:36%}
+	0%   {left:9%;top:20%}
  	25%  {left:70%;}
-	60%  {left: 70%;top:25%;}
-	100% {left:70%;top:25%;transform:scale(0,0);}
+	60%  {left: 70%;top:10%;}
+	100% {left:70%;top:10%;transform:scale(0,0);}
 }
 
 @keyframes pyramid {
-	0%   {left:9%;top:36%}
+	0%   {left:9%;top:20%}
  	25%  {left:70%;}
-	60%  {left: 70%;top:25%;}
-	100% {left:70%;top:25%;transform:scale(0,0);}
+	60%  {left: 70%;top:10%;}
+	100% {left:70%;top:10%;transform:scale(0,0);}
 }
 
 @-webkit-keyframes cycletext {
@@ -438,6 +441,10 @@ width:8%;
 }
 .contents .cont.v-bottom{
 	vertical-align:bottom;
+}
+
+.contents .cont.animation-wtext{
+	padding:4em 0;
 }
 
 .content-section .text-left{
@@ -629,5 +636,9 @@ width:8%;
 @media only screen and (min-height : 640px) {
 	.footer-container{
 		height:100vh;
+	}
+
+	.footer-container .footer-text{
+		top:70%;
 	}
 }
