@@ -591,6 +591,9 @@ width:8%;
 	background-position: left center;
 	margin: 0 auto;
 }
+.footer-container .contents .content-right{
+	line-height:1.8em;
+}
 .footer-container .contents h4{
 	margin: 1em 0 0;
 }
