@@ -3,16 +3,493 @@
   border:none;
   box-shadow: none;
 }
+body{
+    background-color: #eeeff0;
+    h1{
+      font-size:2.8em;
+    }
+    .grey-color{
+      color:#c1c1c1 !important;
+    }
+    .white-color{
+      color:#fff !important;
+    }
+    .yellow-color{
+      color:#fad707 !important;
+    }
+}
 
+.section{
+
+  &.top-part{
+    margin-top:1em;
+    margin-bottom:3.5em;
+    background-image:url("../img/bg-circles.png");
+    background-repeat:no-repeat;
+    background-position:center 103%;
+    background-size:contain;
+    h1{
+      margin:5px 0 25px 0;
+    }
+    p{
+      font-size:1.3em;
+    }
+    .sub-label{
+      margin:10px 0 25px 0;
+      .sub-content{
+        padding:5px 0;
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  &.about-part{
+    padding:35px 0;
+    .row{
+      padding:1em 0;
+    }
+    h1{
+      margin:20px 0 15px 0;
+    }
+    p{
+      font-size:1.3em;
+      margin:10px 0;
+      line-height:1.3em;
+    }
+    .content-table{
+      p{
+        font-size:1em;
+        min-height:54px;
+      }
+    }
+
+    img{
+      &.small-img{
+          width:3%;
+          margin-top:-15px;
+      }
+      &.egnmntprty{
+        width:15%;
+
+      }
+    }
+  }
+  &.sponsors-part{
+    padding:35px 0;
+    .row{
+      &.logo{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        padding:10px 0;
+
+        &> [class*='col-'] {
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+        }
+
+        &> [class*='col-'] img {
+          align-self: center;
+        }
+      }
+    }
+  }
+  &.footer{
+    background-color:#2d2d2d;
+    .row{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      padding:10px 0;
+
+      &> [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+      }
+
+      &> [class*='col-'] img {
+        margin:auto;
+      }
+    }
+    .footer-text{
+      .egnmntprty{
+        width:11%;
+      }
+    }
+  }
+}
 .cookie-part{
   position:relative;
   img{
     position:absolute;
     &.logo{
       left:0;
-      bottom:0;
-      top:0;
       right:0;
+      margin: 0 auto;
+    }
+    &.cookies{
+
     }
   }
+}
+
+
+/* Extra small viewport or screen */
+@media only screen and (min-width : 320px) {
+  .cookie-part{
+    min-height:300px;
+
+    img{
+      position:absolute;
+      &.logo{
+        width:25%;
+        top:23%;
+      }
+      &.cookies{
+        &.left{
+         width: 42%;
+         left: 4%;
+         top: 7%;
+        }
+        &.right{
+          width: 36%;
+          left: 55%;
+          top: 9%;
+        }
+        &.crumb-dot{
+          width: 50%;
+          top: 35%;
+          left: 30%;
+        }
+      }
+    }
+  }
+  .section{
+    &.top-part{
+      background-position: center 53%;
+    }
+    &.about-part{
+      img{
+        &.egnmntprty{
+          width:33%;
+        }
+        &.small-img{
+          width:7%;
+        }
+      }
+    }
+    &.sponsors-part{
+      .img-responsive{
+        margin:5px auto;
+      }
+    }
+    &.footer{
+
+      .footer-text{
+        img{
+          &.egnmntprty{
+            width:25%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width : 375px) {
+// write CSS properties here
+
+  .cookie-part{
+    min-height:444px;
+
+    img{
+      position:absolute;
+      &.logo{
+        width:25%;
+        top:23%;
+      }
+      &.cookies{
+        &.left{
+         width: 42%;
+         left: 4%;
+         top: 7%;
+        }
+        &.right{
+          width: 36%;
+          left: 55%;
+          top: 9%;
+        }
+        &.crumb-dot{
+          width: 50%;
+          top: 35%;
+          left: 30%;
+        }
+      }
+    }
+  }
+  .section{
+    &.top-part{
+      background-position: center 53%;
+    }
+    &.about-part{
+      img{
+        &.egnmntprty{
+          width:25%;
+        }
+        &.small-img{
+          width:6%;
+        }
+      }
+    }
+    &.sponsors-part{
+      .img-responsive{
+        margin:5px auto;
+      }
+    }
+    &.footer{
+
+      .footer-text{
+        img{
+          &.egnmntprty{
+            width:25%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width : 414px) {
+// write CSS properties here
+
+  .cookie-part{
+    min-height:444px;
+
+    img{
+      position:absolute;
+      &.logo{
+        width:25%;
+        top:23%;
+      }
+      &.cookies{
+        &.left{
+         width: 42%;
+         left: 4%;
+         top: 7%;
+        }
+        &.right{
+          width: 36%;
+          left: 55%;
+          top: 9%;
+        }
+        &.crumb-dot{
+          width: 50%;
+          top: 35%;
+          left: 30%;
+        }
+      }
+    }
+  }
+  .section{
+    &.top-part{
+      background-position: center 53%;
+    }
+    &.about-part{
+      img{
+        &.egnmntprty{
+          width:25%;
+        }
+        &.small-img{
+          width:6%;
+        }
+      }
+    }
+    &.sponsors-part{
+      .img-responsive{
+        margin:5px auto;
+      }
+    }
+    &.footer{
+
+      .footer-text{
+        img{
+          &.egnmntprty{
+            width:25%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width : 480px) {
+// write CSS properties here
+}
+@media only screen and (min-width : 736px) {
+// write CSS properties here
+.cookie-part{
+  min-height:653px;
+
+  img{
+    position:absolute;
+    &.logo{
+      width:25%;
+      top:27%;
+    }
+    &.cookies{
+      &.left{
+       width: 42%;
+       left: 4%;
+       top: 7%;
+      }
+      &.right{
+        width: 36%;
+        left: 55%;
+        top: 9%;
+      }
+      &.crumb-dot{
+       width: auto;
+       top: 46%;
+       left: 30%;
+      }
+    }
+  }
+}
+.section{
+  &.sponsors-part{
+    .img-responsive{
+      margin:5px auto;
+    }
+  }
+  &.about-part{
+    img{
+      &.egnmntprty{
+        width:20%;
+      }
+      &.small-img{
+        width:4%;
+      }
+    }
+  }
+  &.footer{
+    min-height:768px;
+    .row{
+      height:100vh;
+      .left-footer{
+        height:100%;
+        background-image:url("../img/footer-bg.png");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size:cover;
+      }
+    }
+  }
+}
+
+}
+/* Small viewport or screen */
+@media only screen and (min-width : 768px) {
+// write CSS properties here
+.cookie-part{
+  min-height:653px;
+
+  img{
+    position:absolute;
+    &.logo{
+      width:25%;
+      top:27%;
+    }
+    &.cookies{
+      &.left{
+       width: 42%;
+       left: 4%;
+       top: 7%;
+      }
+      &.right{
+        width: 36%;
+        left: 55%;
+        top: 9%;
+      }
+      &.crumb-dot{
+       width: auto;
+       top: 46%;
+       left: 30%;
+      }
+    }
+  }
+}
+.section{
+  &.sponsors-part{
+    .img-responsive{
+      margin:5px auto;
+    }
+  }
+  &.footer{
+    min-height:768px;
+    .row{
+      height:100vh;
+      .left-footer{
+        height:100%;
+        background-image:url("../img/footer-bg.png");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size:cover;
+      }
+    }
+  }
+}
+}
+/* Medium viewport or screen */
+@media only screen and (min-width : 992px) {
+// write CSS properties here
+}
+/* Large viewport or screen */
+@media only screen and (min-width : 1024px) {
+ // write CSS properties here
+ .cookie-part{
+   min-height:880px;
+
+   img{
+     position:absolute;
+     &.logo{
+       width:25%;
+       top:27%;
+     }
+     &.cookies{
+       &.left{
+        width: auto;
+        left: 4%;
+        top: 7%;
+       }
+       &.right{
+         width: auto;
+         left: 54%;
+         top: 9%;
+       }
+       &.crumb-dot{
+        width: auto;
+        top: 46%;
+        left: 30%;
+       }
+     }
+   }
+ }
+ .section{
+   &.footer{
+     min-height:768px;
+     .row{
+       height:100vh;
+       .left-footer{
+         height:100%;
+         background-image:url("../img/footer-bg.png");
+         background-repeat:no-repeat;
+         background-position:center center;
+         background-size:cover;
+       }
+     }
+   }
+ }
 }
