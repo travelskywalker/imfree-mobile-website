@@ -542,6 +542,8 @@ h4 {
     #mobileversion .section.about-part .content-table p {
       font-size: 1em;
       min-height: 54px; }
+    #mobileversion .section.about-part img.img-responsive {
+      margin: 0 auto; }
     #mobileversion .section.about-part img.small-img {
       width: 3%;
       margin-top: -15px; }

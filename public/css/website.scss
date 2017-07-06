@@ -845,6 +845,9 @@ h4 {
         }
 
         img{
+          &.img-responsive{
+            margin:0 auto;
+          }
           &.small-img{
               width:3%;
               margin-top:-15px;
