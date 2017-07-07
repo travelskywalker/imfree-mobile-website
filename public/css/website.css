@@ -445,7 +445,7 @@ h4 {
     margin: 0;
     padding: 2em 0;
     /*height:454px;*/
-    height: 90vh;
+    height: 100vh;
     background-color: #222222; }
   #desktopversion .footer-container .contents {
     width: 900px;
@@ -611,14 +611,20 @@ h4 {
           left: 30%; }
     #mobileversion .section.top-part {
       background-position: center 53%; }
+      #mobileversion .section.top-part img.small-img {
+        width: 6%; }
     #mobileversion .section.about-part img.egnmntprty {
       width: 33%; }
     #mobileversion .section.about-part img.small-img {
       width: 7%; }
     #mobileversion .section.sponsors-part .img-responsive {
       margin: 5px auto; }
-    #mobileversion .section.footer .footer-text img.egnmntprty {
-      width: 25%; } }
+    #mobileversion .section.footer {
+      text-align: center; }
+      #mobileversion .section.footer .left-footer img {
+        margin: 0 auto !important; }
+      #mobileversion .section.footer .footer-text img.egnmntprty {
+        width: 25%; } }
   @media only screen and (min-width: 375px) {
     #mobileversion .cookie-part {
       min-height: 444px; }

@@ -692,7 +692,7 @@ h4 {
     padding: 2em 0;
 
     /*height:454px;*/
-    height: 90vh;
+    height: 100vh;
 
     background-color: #222222;
 }
@@ -957,6 +957,12 @@ h4 {
       .section{
         &.top-part{
           background-position: center 53%;
+          img{
+            &.small-img{
+              width:6%;
+            }
+          }
+        
         }
         &.about-part{
           img{
@@ -974,9 +980,15 @@ h4 {
           }
         }
         &.footer{
-
+          text-align: center;
+          .left-footer{
+            img{
+              margin:0 auto !important;
+            }
+          }
           .footer-text{
             img{
+
               &.egnmntprty{
                 width:25%;
               }
@@ -1213,6 +1225,7 @@ h4 {
       }
       &.footer{
         min-height:768px;
+
         .row{
           height:100vh;
           .left-footer{
