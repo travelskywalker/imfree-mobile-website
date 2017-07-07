@@ -563,12 +563,13 @@ h4 {
 }
 
 .contents .cont img.small-img {
-    width: 4%;
+  width: 5%;
+  margin-top: -12px;
 }
 
 #welcome-note p img.small-img {
-    width: 3%;
-    margin: 0 2px;
+    width: 4%;
+    margin: -15px 2px 0 2px;
 }
 
 .cont-41 {
@@ -763,7 +764,13 @@ h4 {
 .contents .cont img.egnmntprty,
 .egnmntprty {
     width: 15%;
-    margin-bottom: -4px;
+    margin-bottom: 2px;
+}
+
+.footer-text img.egnmntprty,
+.egnmntprty {
+    width: 7%;
+    margin-bottom: 2px;
 }
 
 .singularity-me {
