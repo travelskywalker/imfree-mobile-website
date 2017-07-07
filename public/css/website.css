@@ -713,14 +713,12 @@ h4 {
       width: 4%; }
     #mobileversion .section.footer {
       min-height: 768px; }
-      #mobileversion .section.footer .row {
-        height: 100vh; }
-        #mobileversion .section.footer .row .left-footer {
-          height: 100%;
-          background-image: url("../img/footer-bg.png");
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover; } }
+      #mobileversion .section.footer .row .left-footer {
+        height: 100%;
+        background-image: url("../img/footer-bg.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; } }
   @media only screen and (min-width: 768px) {
     #mobileversion .cookie-part {
       min-height: 653px; }
