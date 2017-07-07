@@ -720,12 +720,16 @@ h4 {
           width: auto;
           top: 46%;
           left: 30%; }
+    #mobileversion .section.top-part img.small-img {
+      width: 4%;
+      margin-top: -16px; }
     #mobileversion .section.sponsors-part .img-responsive {
       margin: 5px auto; }
     #mobileversion .section.about-part img.egnmntprty {
       width: 20%; }
     #mobileversion .section.about-part img.small-img {
-      width: 4%; }
+      width: 4%;
+      margin-top: -18px; }
     #mobileversion .section.footer .row .left-footer {
       height: 100%;
       background-image: url("../img/footer-bg.png");

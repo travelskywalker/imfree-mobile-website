@@ -1198,6 +1198,16 @@ h4 {
       }
     }
     .section{
+      &.top-part{
+
+        img{
+          
+          &.small-img{
+            width: 4%;
+            margin-top: -16px;
+          }
+        }
+      }
       &.sponsors-part{
         .img-responsive{
           margin:5px auto;
@@ -1210,6 +1220,7 @@ h4 {
           }
           &.small-img{
             width:4%;
+            margin-top: -18px;
           }
         }
       }
