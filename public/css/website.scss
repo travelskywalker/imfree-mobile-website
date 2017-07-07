@@ -993,6 +993,13 @@ h4 {
           .img-responsive{
             margin:5px auto;
           }
+          .row{
+            &.logo{
+              .col-xs-4{
+                min-height:75px;
+              }
+            }
+          }
         }
         &.footer{
           text-align: center;

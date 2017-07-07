@@ -629,6 +629,8 @@ h4 {
       width: 7%; }
     #mobileversion .section.sponsors-part .img-responsive {
       margin: 5px auto; }
+    #mobileversion .section.sponsors-part .row.logo .col-xs-4 {
+      min-height: 75px; }
     #mobileversion .section.footer {
       text-align: center; }
       #mobileversion .section.footer .left-footer img {
