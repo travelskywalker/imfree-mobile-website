@@ -904,6 +904,16 @@ h4 {
           &> [class*='col-'] img {
             margin:auto;
           }
+          .right-text{
+            div{
+              padding-top:10px;
+              padding-bottom:10px;
+            }
+            p{
+              margin-top:0;
+            }
+          }
+
         }
         .footer-text{
           .egnmntprty{
@@ -1201,7 +1211,7 @@ h4 {
       &.top-part{
 
         img{
-          
+
           &.small-img{
             width: 4%;
             margin-top: -16px;

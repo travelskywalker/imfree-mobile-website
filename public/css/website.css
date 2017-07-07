@@ -583,6 +583,11 @@ h4 {
         align-self: center; }
       #mobileversion .section.footer .row > [class*='col-'] img {
         margin: auto; }
+      #mobileversion .section.footer .row .right-text div {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      #mobileversion .section.footer .row .right-text p {
+        margin-top: 0; }
     #mobileversion .section.footer .footer-text .egnmntprty {
       width: 11%; }
   #mobileversion .cookie-part {
