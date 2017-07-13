@@ -790,6 +790,9 @@
 			if( isMobile.any() ){
 				skrollr.init().destroy();
 			}
+			else if ( $(window).width() < 1024){
+				skrollr.init().destroy();
+			}
 			else{
 				skrollrInit();
 			};
