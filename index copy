@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 	<meta charset="utf-8">
@@ -13,8 +13,8 @@
 
 <body>
 
+<div id="desktopversion">
 
-	<div id="desktopversion">
 	<!-- <div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div> -->
 
 	<div id="intro" data-0="opacity:1;top:5%;transform:rotate(0deg);transform-origin:0 0;"     data-500="top:-15%;">
@@ -62,7 +62,7 @@
 					online data and privacy - completely.</div>
 			</div>
 
-		<p>That’s what IoMe is. The internet of  <img class="small-img" src="public/img/ME.png"/>  gives members complete control of their personal data<br/> distribution, value and privacy. They choose whom they want to engage with to unlock fair value that<br/> allows them to organise their entire digital universe for free into the Imfree platform.</p>
+		<p>That’s what IoMe is. The internet of <img class="small-img" src="public/img/ME.png"/> gives members complete control of their personal data<br/> distribution, value and privacy. They choose whom they want to engage with to unlock fair value that<br/> allows them to organise their entire digital universe for free into the Imfree platform.</p>
 	</div>
 
 	<div class="parallax-bg mobile" data-0="display:none;"  data-3000="display:block;height:100%;top:100%;width:100%;z-index:1;" data-5500="top:0%;" data-10000="top:-10%;opacity:1;" data-15000="opacity:0;" >
@@ -110,7 +110,7 @@
 					and transactional data points to quantify and qualify consumer <br/>relationships that are singular to your product.
 					</p>
 					<p>
-					The Event Horizon Planner uses real time AI to deploy <br/>optimised contextual content that recognises untapped pathways <br/>to product growth. This executes retargeted actionable content <br class="hidden-xs"/>which delights members with an authentic product dialogue <br/>
+					The Event Horizon Planner uses real time AI to deploy <br/>optimised contextual content that recognises untapped pathways <br/>to product growth. This executes retargeted actionable content <br/>which delights members with an authentic product dialogue <br/>
 					and a genuine understanding of their relationship.</p>
 				</div>
 				<div class="content-right cont-36 cont v-bottom">
@@ -231,90 +231,8 @@
 		<img class="center" data-0="display:none;" data-19000="display:block;top:25%;"  data-23000="top:5%;" data-25000="top:-100%;" src="public/img/parallax-letters.png">
 	</div>
 
-<div id="last-part" class="content-section white-bg logos " data-0="display:none;" data-20000="top:100%;display:block;"  data-25000="top:0;transform:translate3d(0px, 0px, 0px);" data-28000="transform:translate3d(0px,-500px, 0px);">
-<!-- <div class="content-section white-bg logos no-padding" data-0="display:none;" data-20000="top:100%;display:block;"  data-22000="top:0;transform:translate3d(0px, 0px, 0px);" > -->
-	<h1 class="text-center">The smartest kids in the room.</h1>
-	<h3 class="text-center">Already playing in the sandbox.</h3>
-	<div class="contents-table contents-table-5">
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_ascof-lagundi.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_betadine-powder-spray.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_betadine-gargle.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_betadine femwash.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_calla.png">
-		</div>
-	</div>
-	<div class="contents-table contents-table-4">
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_champion.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_clium.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_croley-foods.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_gatorade.png">
-		</div>
-	</div>
-	<div class="contents-table contents-table-5">
-		<div class="content-t middle">
-			<img src="public/img/logos/client-logos_hana.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_huggies.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_joy.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_kleenex.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_kotex.png">
-		</div>
-	</div>
-	<div class="contents-table contents-table-4">
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_moonleaf.png">
-		</div>
-		<div class="content-t middle">
-				<img src="public/img/logos/client logos_mothers best.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_mountain dew.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_oracare.png">
-		</div>
-	</div>
-	<div class="contents-table contents-table-5">
-		<div class="content-t middle">
-
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_pepsi.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_poten-cee.png">
-		</div>
-		<div class="content-t middle">
-			<img src="public/img/logos/client logos_sting-white.png">
-		</div>
-		<div class="content-t middle">
-
-		</div>
-	</div>
-
+<!-- <div class="content-section white-bg logos" data-0="display:none;" data-20000="top:100%;display:block;"  data-25000="top:0;transform:translate3d(0px, 0px, 0px);" data-28000="transform:translate3d(0px,-1120px, 0px);"> -->
+<div class="content-section white-bg logos no-padding" data-0="display:none;" data-20000="top:100%;display:block;"  data-22000="top:0;transform:translate3d(0px, 0px, 0px);" >
 
 	<div class="footer-container">
 		<div class="contents">
@@ -358,7 +276,9 @@
 <div class="content-section black-bg footer" data-0="display:none;" data-25000="top:100%;display:block;" data-end="top:0;transform:translate3d(0px, 0px, 0px);" >
 
 </div> -->
+
 </div>
+
 <div id="mobileversion">
 
 	<div class="section top-part">
@@ -383,7 +303,7 @@
 					<div class="sub-content content2 col-md-12 col-sm-12 col-xs-12" >Second we feel everyone is valuable to someone and they deserve to share that value.
 				</div>
 					<div class="sub-content content3 col-md-12 col-sm-12 col-xs-12">Third, we believe people, are well, people <br class="hidden-xs"/>and
-				not products and they should control their<br class="hidden-xs"/>
+				not products and they should control their
 				online data and privacy - completely.</div>
 		</div>
 		<div class="row">
@@ -439,7 +359,7 @@
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 text-center">
 					<img class="img-responsive" src="mobileversion/img/content/m4.png"/>
-					<h1 >Contextual creative conversations. <br>
+					<h1 >Contextual creative conversations.<br>
 								Now turnkey.
 						</h1>
 						<p>Imfree has taken the pain away from marketers having to add another creative <br class="hidden-xs"/>requirement to their roster by founding <img class="egnmntprty" src="mobileversion/img/tep-gray.png">.
@@ -525,89 +445,11 @@
 	<div class="section parallax-2">
 		<img class="img-responsive" src="mobileversion/img/parallax-2-img.png"/>
 	</div>
-	<div class="section sponsors-part">
-		<div class="page container">
-			<h1 class="text-center">The smartest kids in the room.</h1>
-			<h3 class="text-center">Already playing in the sandbox.</h3>
-			<div class="row text-center logo">
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_ascof-lagundi.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_betadine-powder-spray.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_betadine-gargle.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_betadine femwash.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_calla.png">
-				</div>
-			<!-- /* test*/ -->
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_champion.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_clium.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_croley-foods.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_gatorade.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client-logos_hana.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_huggies.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_joy.png">
-				</div>
-			</div>
-			<div class="row text-center logo">
-
-
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_kleenex.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_kotex.png">
-				</div>
-
-				<div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_moonleaf.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_mothers best.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_mountain dew.png">
-				</div>
-				<div class="col-md-2 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_oracare.png">
-				</div>
-				<div class="col-md-4 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_pepsi.png">
-				</div>
-				<div class="col-md-4 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_poten-cee.png">
-				</div>
-				<div class="col-md-4 col-sm-3 col-xs-4">
-					<img class="img-responsive" src="public/img/logos/client logos_sting-white.png">
-				</div>
-			</div>
-
-		</div>
-	</div>
 
 	<div class="section footer">
 		<div class="page container">
 			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-6 col-xs-offset-3 left-footer">
+				<div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-6 col-xs-offset-3 left-footer">
 					<img class="img-responsive" src="mobileversion/img/logo-footer.png" />
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 right-text">
@@ -648,8 +490,6 @@
 
 
 	<script type="text/javascript">
-
-
 	$(document).ready(function(){
 			// console.log($('body').height());
 
@@ -673,18 +513,19 @@
 						return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 				}
 			};
+
 			function checkH(){
 				var curH = $('body').height();
 				var curW = $(window).width();
 				console.log(curW);
 				// console.log(curH);
 				if(curH <= 640){
-					$("#last-part").attr("data-28000","transform:translate3d(0px,-1000px, 0px);");
+					$("#last-part").attr("data-28000","transform:translate3d(0px,-1200px, 0px);");
 
 				}
 				else{
 
-					$("#last-part").attr("data-28000","transform:translate3d(0px,-1020px, 0px);");
+					$("#last-part").attr("data-28000","transform:translate3d(0px,-1620px, 0px);");
 
 				}
 				if (curW < 1024) {
@@ -780,6 +621,7 @@
 				});
 			}
 			checkH();
+
 			if( isMobile.any() ){
 				skrollr.init().destroy();
 			}
@@ -794,8 +636,6 @@
 			});
 
 	});
-
-
 	</script>
 </body>
 
