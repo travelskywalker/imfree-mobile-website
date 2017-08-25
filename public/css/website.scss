@@ -871,26 +871,33 @@ h4 {
       }
       &.sponsors-part{
         padding:35px 0;
-        .row{
-          &.logo{
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            flex-wrap: wrap;
-            padding:10px 0;
+        .page{
+          .row{
 
-            &> [class*='col-'] {
-              display: flex;
-              flex-direction: column;
-              align-self: center;
+            &.logo:before{
+                display:block;
             }
+            &.logo{
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              flex-wrap: wrap;
+              padding:10px 0;
 
-            &> [class*='col-'] img {
-              align-self: center;
+              &> [class*='col-'] {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+              }
+
+              &> [class*='col-'] img {
+                align-self: center;
+              }
             }
           }
         }
+
       }
       &.footer{
         background-color:#2d2d2d;
