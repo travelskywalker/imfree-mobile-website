@@ -20,10 +20,10 @@ body #loading {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 556px;
-    height: 520px;
-    margin-top: -278px;
-    margin-left: -278px; }
+    width: 240px;
+    height: 240px;
+    margin-top: -120px;
+    margin-left: -120px; }
 
 html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
   margin: 0;
