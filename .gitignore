@@ -1,1 +1,13 @@
-**/node_modules
+*/dist
+*/node_modules
+*/*.log
+node_modules
+.idea/*
+.DS_Store
+*/.DS_Store
+*/**/.DS_Store
+builds
+*.zip
+*/*.zip
+*.rar
+*/*.rar

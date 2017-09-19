@@ -1,0 +1,17 @@
+.index {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    background: url('../img/bg-index.png') no-repeat top center;
+    background-size: cover;
+    margin: 0 auto; 
+
+    .phone {        
+        margin: 0 auto;
+        display: block;
+
+        img {
+            max-width: 100%;
+        }        
+    }
+}
