@@ -1,13 +1,48 @@
-.index
-  .phone-wrap.centerAbsoluteElement
-    img(src='img/s8_crop.png', alt='phone')
-    .content-wrap
-      .logo
-        img.imglogo(src='img/logo.png', alt='logo')
-      p
-        | Welcome to Imfree, the world's 
-        br
-        | first IoMe free internet platform.
-      .button-group
-        button#partner
-        button#member
+.index.container
+  .wrapper.row
+    .col-md-12
+      // phone contents
+      #phoneWrap.col-md-6.col-centered
+        .phone-wrap
+          img.img-responsive(src='img/s8_crop.png', alt='phone')
+          .content-wrap
+            .logo
+              img.imglogo(src='img/logo.png', alt='logo')
+            p.welcomeText
+              | Welcome to Imfree, the world's 
+              br
+              | first IoMe free internet platform.
+            .button-group
+              button#bePartner
+              //button#beMember
+              a#beMember(href='#', target='_self')
+      // form   
+      #formWrap.col-md-6
+        .form-wrap
+          .content-wrap
+            h2.text-center.text-white
+              | Establish a mutually rewarding
+              br
+              | relationship with your
+              br
+              | target consumers.  
+            form
+              .form-fields.name
+                .field
+                  label(for='name') Name (optional)
+                  input#name(type='text', placeholder='Name (optional)')                
+              .form-fields.company
+                .field
+                  label(for='company') Company
+                  input#company(type='text', placeholder='Company')
+                .error-msg 
+                  | This field is required
+              .form-fields.email
+                .field
+                  label(for='email') Email
+                  input#email(type='email', placeholder='Email')
+                .error-msg
+                  | Invalid email
+              .form-fields.text-center
+                button#submit(onclick="return false") SUMBIT    
+

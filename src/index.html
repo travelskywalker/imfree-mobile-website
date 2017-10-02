@@ -16,14 +16,57 @@
   <body>
     <!--loader container-->
     <div id="loading"><img src="img/loader.gif"></div>
-    <div class="index">
-      <div class="phone-wrap centerAbsoluteElement"><img src="img/s8_crop.png" alt="phone">
-        <div class="content-wrap">
-          <div class="logo"><img src="img/logo.png" alt="logo" class="imglogo"></div>
-          <p>Welcome to Imfree, the world's <br>first IoMe free internet platform.</p>
-          <div class="button-group">
-            <button id="partner"></button>
-            <button id="member"></button>
+    <div class="index container">
+      <div class="wrapper row">
+        <div class="col-md-12">
+          <!-- phone contents-->
+          <div id="phoneWrap" class="col-md-6 col-centered">
+            <div class="phone-wrap"><img src="img/s8_crop.png" alt="phone" class="img-responsive">
+              <div class="content-wrap">
+                <div class="logo"><img src="img/logo.png" alt="logo" class="imglogo"></div>
+                <p class="welcomeText">Welcome to Imfree, the world's <br>first IoMe free internet platform.</p>
+                <div class="button-group">
+                  <button id="bePartner"></button>
+                  <!--button#beMember--><a id="beMember" href="#" target="_self"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- form   -->
+          <div id="formWrap" class="col-md-6">
+            <div class="form-wrap">
+              <div class="content-wrap">
+                <h2 class="text-center text-white">Establish a mutually rewarding<br>relationship with your<br>target consumers.  </h2>
+                <form>
+                  <div class="form-fields name">
+                    <div class="field">
+                      <label for="name">Name (optional)</label>
+                      <input id="name" type="text" placeholder="Name (optional)">
+                    </div>
+                  </div>
+                  <div class="form-fields company">
+                    <div class="field">
+                      <label for="company">Company</label>
+                      <input id="company" type="text" placeholder="Company">
+                    </div>
+                    <div class="error-msg">
+                       
+                      This field is required
+                    </div>
+                  </div>
+                  <div class="form-fields email">
+                    <div class="field">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="error-msg">Invalid email</div>
+                  </div>
+                  <div class="form-fields text-center">
+                    <button id="submit" onclick="return false">SUMBIT    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

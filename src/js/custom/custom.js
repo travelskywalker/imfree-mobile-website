@@ -1,6 +1,8 @@
 var App = {};
+var Index = {};
 var animationTime = 500; // loading
 
+// homepage object
 App = {
     init: function () {
         App.Elements.init();
@@ -65,7 +67,7 @@ App = {
       checkH: function(){
         var curH = $('body').height();
         var curW = $(window).width();
-        console.log(curW);
+        // console.log(curW);
         // console.log(curH);
         if(curH <= 640){
           App.Elements.lastPart.attr("data-28000","transform:translate3d(0px,-1140px, 0px);");
@@ -92,7 +94,7 @@ App = {
                 }
               },
               beforerender: function(data) {
-                console.log(data);
+                //console.log(data);
                   if(data.curTop > 3000){
                     // $('.cookie.whole').addClass('open');
                     // $('.cookie.broken').addClass('open');
@@ -169,6 +171,67 @@ App = {
     }
 }
 
+// index page object
+Index = {
+    init: function () {
+      Index.Elements.init();
+      Index.Listeners.init();                
+    },
+    Elements: {
+      init: function () {
+        this.phoneWrap = $('#phoneWrap');
+        this.formWrap = $('#formWrap');
+        this.btnPartner = $('#bePartner');
+        this.btnMember = $('#beMember');
+        this.intName = $('#name');
+        this.intCompany = $('#company');
+        this.intEmail = $('#email');
+        this.btnSubmit = $('#submit');
+        this.inputBox = $('input');
+      }
+    },
+    Listeners: {
+      init: function () {
+        Index.Elements.btnPartner.on("click", function(){          
+          Index.Events.UI.onBePartnerClick();
+        });
+        Index.Elements.inputBox.on("keyup", function(){          
+          Index.Events.UI.toggleLabelText($(this));
+        });
+      }
+    },
+    Events: {
+      UI: {
+        // add class
+        addElmClass: function(elemSelector, whatClass) {
+          elemSelector.addClass(whatClass);
+        },
+        // remove class
+        removeElmClass: function(elemSelector, whatClass) {
+          elemSelector.removeClass(whatClass);
+        },
+        // be a partner btn on click
+        onBePartnerClick: function() {
+          Index.Events.UI.removeElmClass(Index.Elements.phoneWrap, 'col-centered');
+          Index.Events.UI.addElmClass(Index.Elements.phoneWrap, 'animated slideInRight');
+          Index.Events.UI.addElmClass(Index.Elements.formWrap, 'animated fadeInRight show');
+          Index.Events.UI.addElmClass(Index.Elements.btnPartner, 'active');                    
+        },        
+        toggleLabelText: function(_$this){
+          var inputText = _$this.val();
+          var elemSelector = _$this.parent().find('label');
+          if(inputText !="") {
+            Index.Events.UI.addElmClass(elemSelector, 'active');
+          }
+          else {
+            Index.Events.UI.removeElmClass(elemSelector, 'active');
+          }
+        }
+      }
+    }
+}
+
 $(document).ready(function() {
     App.init();
+    Index.init();
 });
