@@ -1040,6 +1040,8 @@ h4 {
           display: none;
           color: #fff;
           padding: 2% 2% 1%; }
+          .index #formWrap .form-wrap .content-wrap .form-fields .error-msg span {
+            color: #fff; }
         .index #formWrap .form-wrap .content-wrap .form-fields.error {
           background: #b00000;
           border: 2px solid #b00000;

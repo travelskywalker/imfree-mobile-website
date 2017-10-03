@@ -237,6 +237,14 @@ Index = {
           }
         }
       }
+    },
+    Form: {
+      emailValidate: function(email) {
+        var email
+        //if email text != blank                
+          // if check email format  return false
+        // return true
+      } 
     }
 }
 

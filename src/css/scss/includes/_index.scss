@@ -109,9 +109,12 @@
                         }
                     }
                     .error-msg {
-                        display: none;
+                        display: none;                        
                         color: #fff;
                         padding: 2% 2% 1%;                       
+                        span {
+                            color: #fff;
+                        }
                     }
                     // form error style
                     &.error{

@@ -36,13 +36,13 @@
                   label(for='company') Company
                   input#company(type='text', placeholder='Company')
                 .error-msg 
-                  | This field is required
+                  span#companyErrText This field is required.
               .form-fields.email
                 .field
                   label(for='email') Email
                   input#email(type='email', placeholder='Email')
                 .error-msg
-                  | Invalid email
+                   span#emailErrText Invalid email
               .form-fields.text-center
                 button#submit(onclick="return false") SUMBIT    
 
