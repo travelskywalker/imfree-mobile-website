@@ -1015,14 +1015,15 @@ h4 {
         width: 100%; }
         .index #formWrap .form-wrap .content-wrap .form-fields .field {
           background: #FFF;
+          padding: 2% 0 0;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px; }
           .index #formWrap .form-wrap .content-wrap .form-fields .field label {
-            visibility: hidden;
-            padding: 3% 0 0 3%; }
+            display: none;
+            padding: 0 0 0 3%; }
             .index #formWrap .form-wrap .content-wrap .form-fields .field label.active {
-              visibility: visible; }
+              display: block; }
           .index #formWrap .form-wrap .content-wrap .form-fields .field input[type=text],
           .index #formWrap .form-wrap .content-wrap .form-fields .field input[type=email] {
             width: 100%;

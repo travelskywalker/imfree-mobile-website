@@ -85,13 +85,14 @@
 
                     }
                     .field {
-                        background: $bgWhite;                    
+                        background: $bgWhite;
+                        padding:2% 0 0;                    
                         @include border-radius(10px);
                         label {
-                            visibility: hidden;
-                            padding: 3% 0 0 3%;
+                            display: none;
+                            padding: 0 0 0 3%;
                             &.active {
-                                visibility: visible;
+                                display: block;
                             }
                         }                
                         input[type=text],

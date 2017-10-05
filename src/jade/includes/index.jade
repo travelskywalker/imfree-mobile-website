@@ -26,23 +26,23 @@
               | relationship with your
               br
               | target consumers.  
-            form
+            form#subcription(action="#", method="post")
               .form-fields.name
                 .field
                   label(for='name') Name (optional)
-                  input#name(type='text', placeholder='Name (optional)')                
-              .form-fields.company
+                  input#name(name='name', type='text', placeholder='Name (optional)')                
+              #companyWrap.form-fields.company
                 .field
                   label(for='company') Company
-                  input#company(type='text', placeholder='Company')
+                  input#company(name='company', type='text', placeholder='Company')
                 .error-msg 
-                  span#companyErrText This field is required.
-              .form-fields.email
+                  span#companyErrText
+              #emailWrap.form-fields.email
                 .field
                   label(for='email') Email
-                  input#email(type='email', placeholder='Email')
+                  input#email(name='email', type='text', placeholder='Email')
                 .error-msg
-                   span#emailErrText Invalid email
+                   span#emailErrText
               .form-fields.text-center
-                button#submit(onclick="return false") SUMBIT    
+                button#submit SUMBIT    
 

@@ -10,6 +10,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 var App = {};
 var Index = {};
 var animationTime = 500; // loading
+var companyErrText;
+var emailErrText;
+var emailPassed = false;
+var companyPassed = false;
 
 // homepage object
 App = {
@@ -192,11 +196,14 @@ Index = {
         this.formWrap = $('#formWrap');
         this.btnPartner = $('#bePartner');
         this.btnMember = $('#beMember');
+        this.companyWrap = $('#companyWrap');
+        this.emailWrap = $('#emailWrap');
         this.intName = $('#name');
         this.intCompany = $('#company');
         this.intEmail = $('#email');
         this.btnSubmit = $('#submit');
         this.inputBox = $('input');
+        this.subcription = $('#subcription');
       }
     },
     Listeners: {
@@ -207,6 +214,10 @@ Index = {
         Index.Elements.inputBox.on("keyup", function(){          
           Index.Events.UI.toggleLabelText($(this));
         });
+        Index.Elements.subcription.on("submit", function(e){     
+          //e.preventDefault();
+          Index.Events.Form.formValidate();
+        });        
       }
     },
     Events: {
@@ -236,15 +247,76 @@ Index = {
             Index.Events.UI.removeElmClass(elemSelector, 'active');
           }
         }
-      }
-    },
-    Form: {
-      emailValidate: function(email) {
-        var email
-        //if email text != blank                
-          // if check email format  return false
-        // return true
-      } 
+      },
+      Form: {
+        formValidate: function() {
+          companyPassed = (Index.Events.Form.companyValidate()) ? true : false;
+          emailPassed = (Index.Events.Form.emailValidate()) ? true : false;
+          
+          Index.Events.Form.companyValidate();
+          Index.Events.Form.emailValidate();
+
+          if(companyPassed && emailPassed){
+            Index.Events.Form.postData();
+            return true;
+          }
+          else {
+            event.preventDefault();
+            return false;
+          }
+        },
+        companyValidate: function() {
+          var companyText = Index.Elements.intCompany.val(); // input text value
+          var regex = /^\s+$/;
+          var isValid = regex.test(companyText);
+          if(companyText == "" || isValid) {
+            companyErrText = "This field is required!";
+            Index.Events.Form.showError(Index.Elements.companyWrap, companyErrText, 'error');
+            return false;
+          }
+          else {
+            companyErrText = "";
+            Index.Events.Form.removeError(Index.Elements.companyWrap, companyErrText, 'error');
+            return true;
+          }
+        },        
+        emailValidate: function() {
+          var emailText = Index.Elements.intEmail.val(); // input text value
+          var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          var isValid = emailRegex.test(emailText); // return true or false          
+          if(emailText == "") {
+            emailErrText = "This field is required!";
+            Index.Events.Form.showError(Index.Elements.emailWrap, emailErrText, 'error');
+            return false;
+          }
+          else if(emailText != ""  && !isValid) {
+            emailErrText = "Email is invalid!";
+            Index.Events.Form.showError(Index.Elements.emailWrap, emailErrText, 'error');
+            return false;
+          } else {
+            emailErrText = "";
+            Index.Events.Form.removeError(Index.Elements.emailWrap, emailErrText, 'error');
+            return true;
+          }
+        },
+        showError: function(elemSelector,errText,errClass){
+          var errHtml = elemSelector.find('.error-msg span');
+          Index.Events.UI.addElmClass(elemSelector, errClass);
+          errHtml.html(errText);
+        },
+        removeError: function(elemSelector,errText,errClass){
+          var errHtml = elemSelector.find('.error-msg span');
+          Index.Events.UI.removeElmClass(elemSelector, errClass);
+          errHtml.html(errText);
+        },
+        postData: function(){
+          var url = Index.Elements.subcription.attr("action");
+          var formData = Index.Elements.subcription.serializeArray();
+          $.post(url, formData).done(function (data) {
+              alert(data);
+          });
+        }                
+      }      
     }
 }
 
