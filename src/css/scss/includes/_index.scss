@@ -1,6 +1,6 @@
 .index {
-    background: url('../img/bg-index.png') no-repeat center top;
-    background-size: cover;
+    background: $color-gallery url('../img/index/background_dots.png') no-repeat 0 50px;
+    background-size: contain;
     padding: 90px 0 0;
     // phone wrapper
     #phoneWrap {
@@ -16,12 +16,12 @@
                 display: block; 
 
                 &.imglogo {
-                    width: 45%;
-                    margin: 0 auto;
+                    width: auto;
+                    margin: 0 auto 10%;
                 }
             }
             .content-wrap {
-                top: 19%;
+                top: 15%;
                 width: 100%;
                 max-width: 390px;
                 left: 50%;
@@ -29,33 +29,63 @@
                 padding: 0;
                 text-align: center;
                 position: absolute;
+                
+                p {
+                    &.welcomeText { 
+                        font-size:23px;
+                        line-height: 30px;
+                        font-family: $fontBariol;
+                        color: $color-mine-shaft; 
+                        margin: 0 0 10%;
+                    }
+                }
 
-                p { font-size:1.2em; }
 
                 .button-group {
+                    //buttons extends
+                    %cta-primary {
+                        background-color: $colorPurple;
+                        color: $bgWhite;
+                        font-family: $fontBariolBold;
+                        font-size:22px;
+                    }
+                    %cta-secondary {
+                        background-color: $color-mine-shaft;
+                        color: $bgWhite;
+                        font-family: $fontBariolBold;
+                        font-size:22px;
+                    }                    
                     button, 
                     a { 
-                        background: url('../img/btn-sprites.png') no-repeat 0 0;
-                        width: 215px;
-                        height: 70px;
-                        border: none;
-                        margin: 0 auto 1.5%;
-                        display: inline-block;
+                        display: block;
+                        margin: 0 auto 4%;
+                        width: 100%;
+                        max-width: 245px;
+                        padding: 3% 10%;
+                        border: 0;
+                        text-decoration: none;
+                        @include border-radius(8px);
+                        @include box-shadow(0, 0, 10px, #bfbfbf);
+
+                        small { 
+                            display: block;
+                            font-size: 13px; 
+                        }
 
                         &#bePartner {
-                            background-position: 0 0;
+                            @extend %cta-primary;
                             &:active,
-                            &:hover,
-                            &.active {
-                                background-position: -225px 0;
+                            &:hover
+                            {
+                                background-color:$color-mariner;
                             }
                         }
                         &#beMember {
-                            background-position: 0 -78px;
+                            @extend %cta-secondary;
                             &:active,
-                            &:hover,
-                            &.active {
-                                background-position: -225px -78px;
+                            &:hover
+                            {
+                                background-color:$color-mariner;
                             }                        
                         }                                                
                     }                    
@@ -69,15 +99,30 @@
         display: none;
         margin: 23px 0 0;
         .form-wrap {
-            width: 83%;            
-            padding: 8% 12%;                        
-            @include background-opacity(#c33b8f, .9);
+            max-width: 480px;            
+            padding: 40px;
+            border: 1px solid $color-pearl-bush;             
+            @include background-opacity($color-linen, 1);
             @include transition(all, .5s, ease);
             @include border-radius(10px);
+            @include box-shadow(0, 0, 20px, #bfbfbf);
             
-            .content-wrap{                
+            .content-wrap{     
+                h1 {
+                    font-size: 27px;
+                    line-height: 35px;
+                    color: $colorPurple;
+                    font-family: $fontBariolBold;
+                }
+                h2 {
+                    color: $color-mine-shaft;
+                    font-size: 25px;
+                    line-height: 30px;
+                    margin: 5px 0 30px;
+                }
+
                 .form-fields {                
-                    margin-bottom: 5%;
+                    margin-bottom: 3%;
                     width: 100%;
                     &.name,
                     &.email,
@@ -86,8 +131,14 @@
                     }
                     .field {
                         background: $bgWhite;
-                        padding:2% 0 0;                    
+                        padding:2% 0 0;
+                        border: 1px solid $color-gallery;                    
                         @include border-radius(10px);
+
+                        &.focused {
+                            border: 1px solid $colorPurple;
+                        }
+
                         label {
                             display: none;
                             padding: 0 0 0 3%;
@@ -98,59 +149,68 @@
                         input[type=text],
                         input[type=email] {                    
                             width: 100%;
-                            font-size: 2.5rem;
+                            font-size: 16px;
                             border: none;
                             padding: 1% 6% 3%;;                
                             display: inline-block;
+                            color: $color-mine-shaft;
                             @include border-radius(10px);
                         }
                         textarea:focus, 
                         input:focus {
                             outline: none;
                         }
+                        ::placeholder{
+                            color:$color-dove-gray;
+                        }
                     }
                     .error-msg {
                         display: none;                        
-                        color: #fff;
-                        padding: 2% 2% 1%;                       
+                        color: $color-red;
+                        padding: 2% 2% 0;                       
                         span {
-                            color: #fff;
+                            color: $color-red;
                         }
                     }
                     // form error style
                     &.error{
-                        background: #b00000;
-                        border: 2px solid #b00000;
+                        //background: #b00000;
+                        //border: 2px solid #b00000;
                         @include border-radius(10px);
                         .field {
-                            label,
+                            border: 1px solid $color-red;
+                            /*label,
                             input[type=text],
                             input[type=email],
                             ::placeholder {
-                                color:#b00000;
-                            }
+                                color:$color-red;
+                            }*/
                         }
                         .error-msg {
                             display: block;
                             position: relative;
                             width: 100%;
-                            &::after{
+                            /*&::after{
                                 content: "x";
                                 position: absolute;
                                 right: 2%;
-                            }
+                            }*/
                         }                        
                     }                    
                     
                     button#submit {
                         border: none;
                         color: $bgWhite;
-                        font-size: 3rem;
+                        font-size: 16px;
                         font-weight: bold;                    
-                        background: #1094c5;
+                        background: $colorPurple;
                         width: 100%;
                         padding: 3% 0;          
-                        @include border-radius(10px);          
+                        @include border-radius(10px);
+
+                        &:hover{
+                            background-color:$color-mariner;
+                        }
                     }
                 }                 
             }
@@ -167,6 +227,7 @@
     }
 }
 
+// utilities
 .text-white {
     color: $bgWhite;
 }

@@ -211,9 +211,21 @@ Index = {
         Index.Elements.btnPartner.on("click", function(){          
           Index.Events.UI.onBePartnerClick();
         });
-        Index.Elements.inputBox.on("keyup", function(){          
-          Index.Events.UI.toggleLabelText($(this));
+        // Index.Elements.inputBox.on("keyup", function(){          
+        //   Index.Events.UI.toggleLabelText($(this));
+        // });
+        Index.Elements.inputBox.on("focusin", function(){
+          Index.Events.UI.addElmClass($(this).parent(), 'focused');
         });
+        Index.Elements.inputBox.on("focusout", function(){
+          Index.Events.UI.removeElmClass($(this).parent(), 'focused');
+        });
+        Index.Elements.intCompany.on("focusout", function(){
+          Index.Events.Form.companyValidate();
+        });
+        Index.Elements.intEmail.on("focusout", function(){
+          Index.Events.Form.emailValidate();
+        });                
         Index.Elements.subcription.on("submit", function(e){     
           //e.preventDefault();
           Index.Events.Form.formValidate();
@@ -270,7 +282,7 @@ Index = {
           var regex = /^\s+$/;
           var isValid = regex.test(companyText);
           if(companyText == "" || isValid) {
-            companyErrText = "This field is required!";
+            companyErrText = "Field is required. Please try again.";
             Index.Events.Form.showError(Index.Elements.companyWrap, companyErrText, 'error');
             return false;
           }
@@ -285,12 +297,12 @@ Index = {
           var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
           var isValid = emailRegex.test(emailText); // return true or false          
           if(emailText == "") {
-            emailErrText = "This field is required!";
+            emailErrText = "Field is required. Please try again.";
             Index.Events.Form.showError(Index.Elements.emailWrap, emailErrText, 'error');
             return false;
           }
           else if(emailText != ""  && !isValid) {
-            emailErrText = "Email is invalid!";
+            emailErrText = "Invalid email address. Please try again.";
             Index.Events.Form.showError(Index.Elements.emailWrap, emailErrText, 'error');
             return false;
           } else {

@@ -937,8 +937,8 @@ h4 {
     display: none; } }
 
 .index {
-  background: url("../img/bg-index.png") no-repeat center top;
-  background-size: cover;
+  background: #EDEDED url("../img/index/background_dots.png") no-repeat 0 50px;
+  background-size: contain;
   padding: 90px 0 0; }
   .index #phoneWrap {
     position: relative;
@@ -956,10 +956,10 @@ h4 {
         max-height: 100%;
         display: block; }
         .index #phoneWrap .phone-wrap img.imglogo {
-          width: 45%;
-          margin: 0 auto; }
+          width: auto;
+          margin: 0 auto 10%; }
       .index #phoneWrap .phone-wrap .content-wrap {
-        top: 19%;
+        top: 15%;
         width: 100%;
         max-width: 390px;
         left: 50%;
@@ -967,58 +967,92 @@ h4 {
         padding: 0;
         text-align: center;
         position: absolute; }
-        .index #phoneWrap .phone-wrap .content-wrap p {
-          font-size: 1.2em; }
+        .index #phoneWrap .phone-wrap .content-wrap p.welcomeText {
+          font-size: 23px;
+          line-height: 30px;
+          font-family: "Bariol", sans-serif;
+          color: #292929;
+          margin: 0 0 10%; }
+        .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner, .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner {
+          background-color: #B03794;
+          color: #FFF;
+          font-family: "Bariol Bold", sans-serif;
+          font-size: 22px; }
+        .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember, .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember {
+          background-color: #292929;
+          color: #FFF;
+          font-family: "Bariol Bold", sans-serif;
+          font-size: 22px; }
         .index #phoneWrap .phone-wrap .content-wrap .button-group button,
         .index #phoneWrap .phone-wrap .content-wrap .button-group a {
-          background: url("../img/btn-sprites.png") no-repeat 0 0;
-          width: 215px;
-          height: 70px;
-          border: none;
-          margin: 0 auto 1.5%;
-          display: inline-block; }
-          .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner,
-          .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner {
-            background-position: 0 0; }
-            .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner:active, .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner:hover, .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner.active,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner:active,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner:hover,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner.active {
-              background-position: -225px 0; }
-          .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember,
-          .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember {
-            background-position: 0 -78px; }
-            .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember:active, .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember:hover, .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember.active,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember:active,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember:hover,
-            .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember.active {
-              background-position: -225px -78px; }
+          display: block;
+          margin: 0 auto 4%;
+          width: 100%;
+          max-width: 245px;
+          padding: 3% 10%;
+          border: 0;
+          text-decoration: none;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          box-shadow: 0 0 10px #bfbfbf;
+          -webkit-box-shadow: 0 0 10px #bfbfbf;
+          -moz-box-shadow: 0 0 10px #bfbfbf; }
+          .index #phoneWrap .phone-wrap .content-wrap .button-group button small,
+          .index #phoneWrap .phone-wrap .content-wrap .button-group a small {
+            display: block;
+            font-size: 13px; }
+          .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner:active, .index #phoneWrap .phone-wrap .content-wrap .button-group button#bePartner:hover,
+          .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner:active,
+          .index #phoneWrap .phone-wrap .content-wrap .button-group a#bePartner:hover {
+            background-color: #2275BB; }
+          .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember:active, .index #phoneWrap .phone-wrap .content-wrap .button-group button#beMember:hover,
+          .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember:active,
+          .index #phoneWrap .phone-wrap .content-wrap .button-group a#beMember:hover {
+            background-color: #2275BB; }
     .index #phoneWrap .img-responsive {
       margin: 0 auto; }
   .index #formWrap {
     display: none;
     margin: 23px 0 0; }
     .index #formWrap .form-wrap {
-      width: 83%;
-      padding: 8% 12%;
-      background: #c33b8f;
+      max-width: 480px;
+      padding: 40px;
+      border: 1px solid #E0D7C6;
+      background: #FDFAF4;
       /* The Fallback */
-      background: rgba(195, 59, 143, 0.9);
+      background: #fdfaf4;
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       border-radius: 10px;
       -webkit-border-radius: 10px;
-      -moz-border-radius: 10px; }
+      -moz-border-radius: 10px;
+      box-shadow: 0 0 20px #bfbfbf;
+      -webkit-box-shadow: 0 0 20px #bfbfbf;
+      -moz-box-shadow: 0 0 20px #bfbfbf; }
+      .index #formWrap .form-wrap .content-wrap h1 {
+        font-size: 27px;
+        line-height: 35px;
+        color: #B03794;
+        font-family: "Bariol Bold", sans-serif; }
+      .index #formWrap .form-wrap .content-wrap h2 {
+        color: #292929;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 5px 0 30px; }
       .index #formWrap .form-wrap .content-wrap .form-fields {
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         width: 100%; }
         .index #formWrap .form-wrap .content-wrap .form-fields .field {
           background: #FFF;
           padding: 2% 0 0;
+          border: 1px solid #EDEDED;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px; }
+          .index #formWrap .form-wrap .content-wrap .form-fields .field.focused {
+            border: 1px solid #B03794; }
           .index #formWrap .form-wrap .content-wrap .form-fields .field label {
             display: none;
             padding: 0 0 0 3%; }
@@ -1027,52 +1061,59 @@ h4 {
           .index #formWrap .form-wrap .content-wrap .form-fields .field input[type=text],
           .index #formWrap .form-wrap .content-wrap .form-fields .field input[type=email] {
             width: 100%;
-            font-size: 2.5rem;
+            font-size: 16px;
             border: none;
             padding: 1% 6% 3%;
             display: inline-block;
+            color: #292929;
             border-radius: 10px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px; }
           .index #formWrap .form-wrap .content-wrap .form-fields .field textarea:focus,
           .index #formWrap .form-wrap .content-wrap .form-fields .field input:focus {
             outline: none; }
+          .index #formWrap .form-wrap .content-wrap .form-fields .field ::placeholder {
+            color: #727272; }
         .index #formWrap .form-wrap .content-wrap .form-fields .error-msg {
           display: none;
-          color: #fff;
-          padding: 2% 2% 1%; }
+          color: #E30000;
+          padding: 2% 2% 0; }
           .index #formWrap .form-wrap .content-wrap .form-fields .error-msg span {
-            color: #fff; }
+            color: #E30000; }
         .index #formWrap .form-wrap .content-wrap .form-fields.error {
-          background: #b00000;
-          border: 2px solid #b00000;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px; }
-          .index #formWrap .form-wrap .content-wrap .form-fields.error .field label,
-          .index #formWrap .form-wrap .content-wrap .form-fields.error .field input[type=text],
-          .index #formWrap .form-wrap .content-wrap .form-fields.error .field input[type=email],
-          .index #formWrap .form-wrap .content-wrap .form-fields.error .field ::placeholder {
-            color: #b00000; }
+          .index #formWrap .form-wrap .content-wrap .form-fields.error .field {
+            border: 1px solid #E30000;
+            /*label,
+                            input[type=text],
+                            input[type=email],
+                            ::placeholder {
+                                color:$color-red;
+                            }*/ }
           .index #formWrap .form-wrap .content-wrap .form-fields.error .error-msg {
             display: block;
             position: relative;
-            width: 100%; }
-            .index #formWrap .form-wrap .content-wrap .form-fields.error .error-msg::after {
-              content: "x";
-              position: absolute;
-              right: 2%; }
+            width: 100%;
+            /*&::after{
+                                content: "x";
+                                position: absolute;
+                                right: 2%;
+                            }*/ }
         .index #formWrap .form-wrap .content-wrap .form-fields button#submit {
           border: none;
           color: #FFF;
-          font-size: 3rem;
+          font-size: 16px;
           font-weight: bold;
-          background: #1094c5;
+          background: #B03794;
           width: 100%;
           padding: 3% 0;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px; }
+          .index #formWrap .form-wrap .content-wrap .form-fields button#submit:hover {
+            background-color: #2275BB; }
   .index #memberWrap {
     display: none;
     margin: 35px 0 0; }

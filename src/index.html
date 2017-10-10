@@ -21,13 +21,13 @@
         <div class="col-md-12">
           <!-- phone contents-->
           <div id="phoneWrap" class="col-md-6 col-centered">
-            <div class="phone-wrap"><img src="img/s8_crop.png" alt="phone" class="img-responsive">
+            <div class="phone-wrap">
+              <!--img.img-responsive(src='img/s8_crop.png', alt='phone')--><img src="img/index/Phone_Mockup.png" alt="phone" class="img-responsive">
               <div class="content-wrap">
-                <div class="logo"><img src="img/logo.png" alt="logo" class="imglogo"></div>
-                <p class="welcomeText">Welcome to Imfree, the world's <br>first IoMe free internet platform.</p>
+                <div class="logo"><img src="img/index/imfree_logo.png" alt="logo" class="imglogo"></div>
+                <p class="welcomeText">Welcome to Imfree, <br>the world's first IoME <br>free internet platform.</p>
                 <div class="button-group">
-                  <button id="bePartner"></button>
-                  <!--button#beMember--><a id="beMember" href="#" target="_self"></a>
+                  <button id="bePartner" title="be a brand partner"><small>BE A</small>BRAND PARTNER  </button><a id="beMember" href="#" target="_self" title="be an imfree member"><small>BE AN</small>IMFREE MEMBER                </a>
                 </div>
               </div>
             </div>
@@ -36,24 +36,25 @@
           <div id="formWrap" class="col-md-6">
             <div class="form-wrap">
               <div class="content-wrap">
+                <h1 class="text-center">Be a Brand Partner</h1>
                 <h2 class="text-center text-white">Establish a mutually rewarding<br>relationship with your<br>target consumers.  </h2>
                 <form id="subcription" action="#" method="post">
                   <div class="form-fields name">
                     <div class="field">
-                      <label for="name">Name (optional)</label>
+                      <!--label(for='name') Name (optional)-->
                       <input id="name" name="name" type="text" placeholder="Name (optional)">
                     </div>
                   </div>
                   <div id="companyWrap" class="form-fields company">
                     <div class="field">
-                      <label for="company">Company</label>
+                      <!--label(for='company') Company-->
                       <input id="company" name="company" type="text" placeholder="Company">
                     </div>
                     <div class="error-msg"> <span id="companyErrText"></span></div>
                   </div>
                   <div id="emailWrap" class="form-fields email">
                     <div class="field">
-                      <label for="email">Email</label>
+                      <!--label(for='email') Email-->
                       <input id="email" name="email" type="text" placeholder="Email">
                     </div>
                     <div class="error-msg"><span id="emailErrText"></span></div>

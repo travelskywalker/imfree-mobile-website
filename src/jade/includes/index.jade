@@ -4,22 +4,30 @@
       // phone contents
       #phoneWrap.col-md-6.col-centered
         .phone-wrap
-          img.img-responsive(src='img/s8_crop.png', alt='phone')
+          //img.img-responsive(src='img/s8_crop.png', alt='phone')
+          img.img-responsive(src='img/index/Phone_Mockup.png', alt='phone')
           .content-wrap
             .logo
-              img.imglogo(src='img/logo.png', alt='logo')
+              img.imglogo(src='img/index/imfree_logo.png', alt='logo')
             p.welcomeText
-              | Welcome to Imfree, the world's 
+              | Welcome to Imfree, 
+              br 
+              | the world's first IoME 
               br
-              | first IoMe free internet platform.
+              | free internet platform.
             .button-group
-              button#bePartner
-              //button#beMember
-              a#beMember(href='#', target='_self')
+              button#bePartner(title='be a brand partner')
+                small BE A
+                | BRAND PARTNER  
+              a#beMember(href='#', target='_self', title='be an imfree member')
+                small BE AN
+                | IMFREE MEMBER                
       // form   
       #formWrap.col-md-6
         .form-wrap
           .content-wrap
+            h1.text-center
+              | Be a Brand Partner
             h2.text-center.text-white
               | Establish a mutually rewarding
               br
@@ -29,17 +37,17 @@
             form#subcription(action="#", method="post")
               .form-fields.name
                 .field
-                  label(for='name') Name (optional)
+                  //label(for='name') Name (optional)
                   input#name(name='name', type='text', placeholder='Name (optional)')                
               #companyWrap.form-fields.company
                 .field
-                  label(for='company') Company
+                  //label(for='company') Company
                   input#company(name='company', type='text', placeholder='Company')
                 .error-msg 
                   span#companyErrText
               #emailWrap.form-fields.email
                 .field
-                  label(for='email') Email
+                  //label(for='email') Email
                   input#email(name='email', type='text', placeholder='Email')
                 .error-msg
                    span#emailErrText
