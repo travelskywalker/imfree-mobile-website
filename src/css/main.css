@@ -514,6 +514,10 @@ h4 {
   #desktopversion .contents-table {
     margin: 2em auto 2.5em auto;
     display: table; }
+    #desktopversion .contents-table .content-t h3 {
+      margin: .5em 0 0 0; }
+    #desktopversion .contents-table .content-t p {
+      margin: 0 0 1em 0; }
   #desktopversion .contents-table-4 .content-t {
     width: 25%; }
   #desktopversion .contents-table-5 .content-t {
@@ -668,6 +672,10 @@ h4 {
     #mobileversion .section.about-part .content-table p {
       font-size: 1em;
       min-height: 54px; }
+    #mobileversion .section.about-part .content-table h3.conditionalspan span {
+      display: inline; }
+      #mobileversion .section.about-part .content-table h3.conditionalspan span.small-text {
+        font-size: .8em; }
     #mobileversion .section.about-part img.img-responsive {
       margin: 0 auto; }
     #mobileversion .section.about-part img.small-img {

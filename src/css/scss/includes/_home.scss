@@ -110,6 +110,7 @@ h4 {
     color: #fff !important;
 }
 #desktopversion{
+
 #intro {
     width: 100%;
 
@@ -612,6 +613,14 @@ h4 {
 .contents-table {
     margin: 2em auto 2.5em auto;
     display: table;
+    .content-t{
+      h3{
+        margin:.5em 0 0 0;
+      }
+      p{
+        margin:0 0 1em 0;
+      }
+    }
 
 }
 
@@ -850,6 +859,16 @@ h4 {
           p{
             font-size:1em;
             min-height:54px;
+          }
+          h3{
+            &.conditionalspan{
+              span{
+                display:inline;
+                &.small-text{
+                  font-size:.8em;
+                }
+              }
+            }
           }
         }
 
