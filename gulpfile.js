@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 // Concat and Minfiy JS
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
-var uglify = require('gulp-uglify'); 
+var uglify = require('gulp-uglify');
 // MinIfY HTML
 var htmlmin = require('gulp-html-minifier');
 // Minify CSS
@@ -45,7 +45,7 @@ gulp.task('sass', function(){
 })
 
 // Concat and Minfiy JS
-gulp.task('minify-js', function() {  
+gulp.task('minify-js', function() {
     return gulp.src(['src/js/lib/*.js', 'src/js/custom/*.js'])
         .pipe(concat('main.js'))
         .pipe(gulp.dest('src/js'))
@@ -84,6 +84,10 @@ gulp.task('build', ['jade', 'sass','minify-css', 'minify-js'], function (){
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./build'));
   // Copy CSS
+  gulp.src('src/css/bootstrap.min.css')
+    .pipe(gulp.dest('build/css'));
+  gulp.src('src/css/fixed-positioning.min.css')
+    .pipe(gulp.dest('build/css'));
   gulp.src('src/css/main.min.css')
     .pipe(gulp.dest('build/css'));
   // Copy JS
