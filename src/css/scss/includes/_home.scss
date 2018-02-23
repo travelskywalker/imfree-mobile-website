@@ -770,7 +770,8 @@ h4 {
 
 .contents .cont img.egnmntprty,
 .egnmntprty {
-    width: 15%;
+    // width: 15%;
+    width:25%;
     margin-bottom: 2px;
 }
 
@@ -1013,7 +1014,8 @@ h4 {
         &.about-part{
           img{
             &.egnmntprty{
-              width:33%;
+              // width:33%;
+              width:53%;
             }
             &.small-img{
               width:7%;
@@ -1088,7 +1090,8 @@ h4 {
         &.about-part{
           img{
             &.egnmntprty{
-              width:25%;
+              // width:25%;
+              width:45%;
             }
             &.small-img{
               width: 8%;

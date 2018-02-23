@@ -607,7 +607,7 @@ h4 {
     padding: 0 !important; }
   #desktopversion .contents .cont img.egnmntprty,
   #desktopversion .egnmntprty {
-    width: 15%;
+    width: 25%;
     margin-bottom: 2px; }
   #desktopversion .footer-text img.egnmntprty,
   #desktopversion .egnmntprty {
@@ -756,7 +756,7 @@ h4 {
         width: 8%;
         margin-top: -12px; }
     #mobileversion .section.about-part img.egnmntprty {
-      width: 33%; }
+      width: 53%; }
     #mobileversion .section.about-part img.small-img {
       width: 7%; }
     #mobileversion .section.sponsors-part .img-responsive {
@@ -792,7 +792,7 @@ h4 {
     #mobileversion .section.top-part {
       background-position: center 53%; }
     #mobileversion .section.about-part img.egnmntprty {
-      width: 25%; }
+      width: 45%; }
     #mobileversion .section.about-part img.small-img {
       width: 8%;
       margin-bottom: -6px; }
